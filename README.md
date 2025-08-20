@@ -102,36 +102,14 @@ php-todolist/
    git clone https://github.com/startely/desafio-backend-estagio.git
    cd php-todolist
    ```
-
-3. **Configurar o banco de dados**:
-   - Crie um banco de dados MySQL chamado `todolist`
-   - Execute o seguinte SQL para criar a tabela:
-   ```sql
-   CREATE TABLE tarefas (
-     id INT AUTO_INCREMENT PRIMARY KEY,
-     title VARCHAR(255) NOT NULL,
-     description TEXT,
-     status ENUM('pendente', 'em andamento', 'concluída') DEFAULT 'pendente',
-     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-   );
-   ```
-
-4. **Configurar conexão com o banco**:
-   - Edite o arquivo `config/database.php` com suas credenciais:
-   ```php
-   define('DB_HOST', 'localhost');
-   define('DB_NAME', 'todolist');
-   define('DB_USER', 'seu_usuario');
-   define('DB_PASS', 'sua_senha');
-   ```
-
-5. **Executar o projeto**:
+   
+3. **Executar o projeto**:
    ```bash
    # Usando o servidor embutido do PHP
    php -S localhost:8000
    ```
    
-6. **Acessar a aplicação**:
+4. **Acessar a aplicação**:
    - Abra seu navegador e vá para `http://localhost:8000`
 
 ## 🖼️ Screenshots do Projeto
