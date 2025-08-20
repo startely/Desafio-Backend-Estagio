@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Criar Tarefa</title>
+  <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Criar Nova Tarefa</h1>
+    <form action="#" method="POST">
+      <label>Título:</label>
+      <input type="text" name="title" required>
+
+      <label>Descrição:</label>
+      <textarea name="description"></textarea>
+
+      <label>Status:</label>
+      <select name="status">
+        <option value="pendente">Pendente</option>
+        <option value="em_andamento">Em andamento</option>
+        <option value="concluida">Concluída</option>
+      </select>
+
+      <br><br>
+      <button type="submit">Salvar</button>
+    </form>
+    <br>
+    <a class="btn" href="tasks_list.html">Voltar para lista</a>
+  </div>
+
+  <!-- Observação para o estagiário -->
+  <!-- Aqui você deve integrar este formulário com seu controller TaskController.php -->
+   
+</body>
+</html>

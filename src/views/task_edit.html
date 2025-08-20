@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Tarefa</title>
+  <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Editar Tarefa</h1>
+    
+    <form action="../src/controllers/TaskController.php" method="POST">
+      <input type="hidden" name="action">
+      
+      <input type="hidden" name="id">
+      
+      <label>Título:</label>
+
+      <input type="text" name="title" required>
+
+      <label>Descrição:</label>
+
+      <textarea name="description"></textarea>
+
+      <label>Status:</label>
+
+      <select name="status">
+        <option >Pendente</option>
+        <option >Em andamento</option>
+        <option >Concluída</option>
+      </select>
+
+      <br><br>
+      <div class="btnbox">
+          <button type="submit">Atualizar Tarefa</button>
+          <btn_excluir type="submit">Excluir Tarefa</btn_excluir>
+      </div>
+    </form>
+    <br>
+    
+    <a class="btn" href="/index.php">Voltar para lista</a>
+  </div>
+   
+</body>
+</html>
